@@ -38,7 +38,7 @@ if (minutes < 10) {
 let currentDay = days[now.getDay()];
 let currentMonth = months[now.getMonth()];
 
-h3.innerHTML = `${currentDay}, ${currentDate} ${currentMonth}, ${hours}:${minutes} `;
+h3.innerHTML = `Last updated: ${currentDay}, ${hours}:${minutes} `;
 
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
