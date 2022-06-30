@@ -37,6 +37,10 @@ h1 {
   font-family: "Didact Gothic", sans-serif;
 }
 
+#icon {
+  position: fixed;
+  width: 150px;
+}
 a {
   text-decoration: none;
   color: black;

@@ -42,6 +42,7 @@ h3.innerHTML = `Last updated: ${currentDay}, ${hours}:${minutes} `;
 
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
+  let icon = document.querySelector("#icon");
   document.querySelector("h1").innerHTML = `${temperature}°C`;
   document.querySelector("h2").innerHTML = response.data.name;
 
@@ -50,7 +51,13 @@ function showTemperature(response) {
     response.data.wind.speed
   );
   document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
+    response.data.weather[0].description;
+
+  icon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  icon.setAttribute("alt", response.data.weather[0].description);
 
   changeVideo(response.data.weather[0].main);
 }
