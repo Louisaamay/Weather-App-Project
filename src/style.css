@@ -22,31 +22,27 @@ body {
   max-width: 650px;
   height: 650px;
 }
-
-.cloud {
-  text-align: center;
-  font-size: 100px;
-  margin-top: 0px;
-  margin-left: 60px;
-  color: grey;
+#icon {
+  position: fixed;
+  width: 150px;
 }
 h1 {
   text-align: left;
   margin-top: 50px;
   font-size: 45px;
-  font-family: "Didact Gothic", sans-serif;
+  font-family: "mukta", "diact-gothic", "arial";
+  font-weight: lighter;
+  color: #464255;
 }
 .units {
   font-size: 16px;
+  font-weight: lighter;
 }
 
-#icon {
-  position: fixed;
-  width: 150px;
-}
 a {
   text-decoration: none;
   color: black;
+  font-weight: lighter;
 }
 
 .col-6 {
@@ -57,17 +53,20 @@ a {
 h2 {
   text-align: center;
   margin-top: 20px;
-  font-family: "Didact Gothic", sans-serif;
+  font-weight: lighter;
+  font-family: "mukta", "diact-gothic", "arial";
 }
 
 h3 {
   text-align: center;
-  font-family: "Didact Gothic", sans-serif;
-  font-size: 16px;
+  font-family: "mukta", "diact-gothic", "arial";
+  font-weight: lighter;
+  font-size: 14px;
 }
 h4 {
   text-align: center;
-  font-family: "Didact Gothic", sans-serif;
+  font-weight: lighter;
+  font-family: "mukta", "diact-gothic", "arial";
   font-size: 12px;
 }
 .search {
@@ -75,9 +74,11 @@ h4 {
   margin: 0 auto;
   padding: 5px;
   width: 400px;
-  border: 1px solid grey;
+  border: 0.5px solid grey;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 100px;
-  font-family: "Didact Gothic", sans-serif;
+  font-family: "mukta", "diact-gothic", "arial";
+  font-weight: lighter;
 }
 
 button {
@@ -86,18 +87,21 @@ button {
   margin-top: 10px;
   margin-bottom: -45px;
   padding: 5px 10px;
-  border: 1px solid grey;
+  border: 0.5px solid grey;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 60px;
   color: grey;
   background-color: white;
-  font-family: "Didact Gothic", sans-serif;
+  font-family: "mukta", "diact-gothic", "arial";
+  font-weight: lighter;
 }
 .days {
   text-align: center;
   display: inline;
   margin: 0 auto;
   padding: 20px;
-  font-family: "Didact Gothic", sans-serif;
+  font-weight: lighter;
+  font-family: "mukta", "diact-gothic", "arial";
 }
 
 .row {
@@ -114,22 +118,39 @@ button {
   display: inline;
   margin: 0 auto;
   padding: 20px;
-  font-family: "Didact Gothic", sans-serif;
+  font-weight: lighter;
+  font-family: "mukta", "diact-gothic", "arial";
 }
 .weather-forecast-temperature {
   text-align: center;
   display: inline;
   margin: 0 auto;
   padding: 20px;
-  font-family: "Didact Gothic", sans-serif;
+  font-family: "mukta", "diact-gothic", "arial";
 }
 
 .footer {
   text-align: center;
   margin: 0 auto;
-  margin-left: 100px;
+  margin-left: 160px;
   bottom: 0;
   font-size: 14px;
   font-family: "Didact Gothic", sans-serif;
   opacity: 40%;
+}
+
+.weather-forecast-temperature-max {
+  color: black;
+  font-family: "mukta", "diact-gothic", "arial";
+}
+.weather-forecast-temperature-min {
+  color: grey;
+  font-weight: lighter;
+  font-family: "mukta", "diact-gothic", "arial";
+}
+
+#code-link {
+  font-style: italic;
+  font-weight: lighter;
+  font-family: "mukta", "diact-gothic", "arial";
 }
