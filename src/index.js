@@ -40,7 +40,7 @@ let currentMonth = months[now.getMonth()];
 
 h3.innerHTML = `Last updated: ${currentDay}, ${hours}:${minutes} `;
 
-function formatDay(timestamp) {
+/* function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -87,7 +87,7 @@ function getForecast(coordinates) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric  `;
   axios.get(apiUrl).then(displayForecast);
 }
-
+*/
 function showTemperature(response) {
   celciusTemperature = Math.round(response.data.main.temp);
   let icon = document.querySelector("#icon");
@@ -111,7 +111,7 @@ function showTemperature(response) {
 
   changeVideo(response.data.weather[0].main);
 
-  getForecast(response.data.coord);
+  /* getForecast(response.data.coord);*/
 }
 
 function searchCity(city) {

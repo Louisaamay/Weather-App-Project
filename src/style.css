@@ -123,3 +123,13 @@ button {
   padding: 20px;
   font-family: "Didact Gothic", sans-serif;
 }
+
+.footer {
+  text-align: center;
+  margin: 0 auto;
+  margin-left: 100px;
+  bottom: 0;
+  font-size: 14px;
+  font-family: "Didact Gothic", sans-serif;
+  opacity: 40%;
+}
