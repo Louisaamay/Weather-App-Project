@@ -99,65 +99,27 @@ button {
   padding: 20px;
   font-family: "Didact Gothic", sans-serif;
 }
-.image1 {
-  text-align: center;
-  border: 1px solid black;
-  border-radius: 100px;
-  padding: 20px;
-  width: 40px;
-  height: 40px;
-  font-size: 25px;
-  color: grey;
-}
-.image2 {
-  text-align: center;
-  border: 1px solid black;
-  border-radius: 100px;
-  padding: 20px;
-  width: 40px;
-  height: 40px;
-  font-size: 25px;
-  color: grey;
-}
-.image3 {
-  text-align: center;
-  border: 1px solid black;
-  border-radius: 100px;
-  padding: 20px;
-  width: 40px;
-  height: 40px;
-  font-size: 25px;
-  color: orange;
-}
-.image4 {
-  text-align: center;
-  border: 1px solid black;
-  border-radius: 100px;
-  padding: 20px;
-  width: 40px;
-  height: 40px;
-  font-size: 25px;
-  color: grey;
-}
-.image5 {
-  text-align: Center;
-  border: 1px solid black;
-  border-radius: 100px;
-  padding: 20px;
-  width: 40px;
-  height: 40px;
-  font-size: 25px;
-  color: orange;
-}
-.temperature {
-  text-align: left;
-  padding: 20px;
-  font-weight: bolder;
-}
+
 .row {
   text-align: center;
   position: relative;
   margin: 0 auto;
   margin-left: 0px;
   width: 120%;
+  font-size: 14px;
+}
+
+.date {
+  text-align: center;
+  display: inline;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Didact Gothic", sans-serif;
+}
+.weather-forecast-temperature {
+  text-align: center;
+  display: inline;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Didact Gothic", sans-serif;
 }
