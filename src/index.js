@@ -41,11 +41,13 @@ let currentMonth = months[now.getMonth()];
 h3.innerHTML = `Last updated: ${currentDay}, ${hours}:${minutes} `;
 
 function showTemperature(response) {
-  let temperature = Math.round(response.data.main.temp);
+  celciusTemperature = Math.round(response.data.main.temp);
   let icon = document.querySelector("#icon");
-  document.querySelector("h1").innerHTML = `${temperature}°C`;
-  document.querySelector("h2").innerHTML = response.data.name;
 
+  document.querySelector(
+    "#city-temperature"
+  ).innerHTML = `${celciusTemperature}`;
+  document.querySelector("h2").innerHTML = response.data.name;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
@@ -98,10 +100,31 @@ function changeVideo(backgroundWeather) {
   }
 }
 
+function showFahrenheitTemperature(event) {
+  event.preventDefault();
+  let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#city-temperature");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function showCelciusTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#city-temperature");
+  temperatureElement.innerHTML = celciusTemperature;
+}
+
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", searchInput);
 
 let button = document.querySelector("button");
 button.addEventListener("click", getLocation);
+
+let celciusTemperature = null;
+
+let celciusLink = document.querySelector("#celcius-link");
+celciusLink.addEventListener("click", showCelciusTemperature);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
 
 searchCity("Sydney");

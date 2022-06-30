@@ -33,8 +33,11 @@ body {
 h1 {
   text-align: left;
   margin-top: 50px;
-  font-size: 50px;
+  font-size: 45px;
   font-family: "Didact Gothic", sans-serif;
+}
+.units {
+  font-size: 16px;
 }
 
 #icon {
