@@ -155,12 +155,12 @@ button {
   font-family: "mukta", "diact-gothic", "arial";
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .box {
     position: relative;
     opacity: 85%;
     padding: 0px;
-    border-radius: 100px;
+    border-radius: 50px;
     width: 350px;
     height: 450px;
     margin-left: 0px;
@@ -213,7 +213,6 @@ button {
   }
 
   .footer {
-    display: flex;
-    justify-content: flex-start;
+    color: white;
   }
 }
