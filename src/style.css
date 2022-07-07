@@ -130,9 +130,9 @@ button {
 }
 
 .footer {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
-  margin-left: 160px;
   bottom: 0;
   font-size: 14px;
   font-family: "Didact Gothic", sans-serif;
@@ -158,17 +158,62 @@ button {
 @media (max-width: 500px) {
   .box {
     position: relative;
-    border: 1px solid white;
-    background-color: white;
     opacity: 85%;
     padding: 0px;
-    padding-bottom: 40px;
-    padding-right: 20px;
     border-radius: 100px;
-    box-shadow: 0px 0px 25px -10px #65565f;
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 450px;
     margin-left: 0px;
     margin-right: 0px;
+  }
+  #humidity,
+  #wind,
+  #description,
+  h4 {
+    display: none;
+    text-align: left;
+  }
+
+  #icon {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  h2 {
+    margin-top: 0px;
+  }
+
+  #celcius-link {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+  }
+
+  .weather-icon {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0px;
+  }
+
+  .search {
+    width: 300px;
+  }
+
+  .date {
+    margin-top: 0px;
+    padding: 0px;
+  }
+
+  .forecast-icon {
+    width: 50px;
+  }
+
+  .weather-forecast-temperature-min {
+    display: none;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: flex-start;
   }
 }
